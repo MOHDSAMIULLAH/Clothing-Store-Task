@@ -2,6 +2,8 @@
 
 This project is a simple fashion e-commerce store built with JavaScript, HTML, and CSS. It features a collection of fashion items that users can browse. Each item is displayed with an image, name, and price. The project can be extended to include more features such as a shopping cart, search functionality, and integration with a backend database like MongoDB.
 
+## Deployed Link: https://clothing-store-task.vercel.app/
+
 ## Features
 
 - Display a collection of fashion items with images, names, and prices.
