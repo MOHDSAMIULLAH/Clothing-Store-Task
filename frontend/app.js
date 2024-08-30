@@ -5,7 +5,7 @@ document.getElementById('searchInput').addEventListener('input', async function(
 
     if (query.length > 0) {
         try {
-            const response = await fetch(`https://clothing-store-task.onrender.com/search?query=${query}`);
+            const response = await fetch(`https://clothing-store-task.onrender.com/search?query=₹{query}`);
             const results = await response.json();
 
             if (results.length > 0) {
@@ -63,9 +63,9 @@ function displayResults(items) {
         itemElement.classList.add('bg-white', 'p-4', 'rounded-lg', 'shadow-lg');
 
         itemElement.innerHTML = `
-            <img src="${item.image}" alt="${item.name}" class="w-full h-48 object-cover rounded-lg mb-4">
-            <h2 class="text-xl font-semibold">${item.name}</h2>
-            <p class="text-gray-600">${item.price}</p>
+            <img src="₹{item.image}" alt="₹{item.name}" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h2 class="text-xl font-semibold">₹{item.name}</h2>
+            <p class="text-gray-600">₹{item.price}</p>
         `;
 
         resultsContainer.appendChild(itemElement);
