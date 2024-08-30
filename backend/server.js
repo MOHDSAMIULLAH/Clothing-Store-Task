@@ -22,6 +22,9 @@ const clothingItemSchema = new mongoose.Schema({
 
 const ClothingItem = mongoose.model("ClothingItem", clothingItemSchema);
 
+app.get('/', (req,res)=>{
+  res.send('Hello from the Clothing Store API');
+})
 app.get("/search", async (req, res) => {
   const query = req.query.query;
   try {

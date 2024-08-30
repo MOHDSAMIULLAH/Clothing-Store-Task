@@ -5,7 +5,7 @@ document.getElementById('searchInput').addEventListener('input', async function(
 
     if (query.length > 0) {
         try {
-            const response = await fetch(`http://localhost:5000/search?query=${query}`);
+            const response = await fetch(`https://clothing-store-task.onrender.com/search?query=${query}`);
             const results = await response.json();
 
             if (results.length > 0) {
