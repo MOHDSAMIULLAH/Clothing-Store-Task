@@ -46,15 +46,15 @@ This project is a simple fashion e-commerce store built with JavaScript, HTML, a
 
 1. Clone this repository to your local machine:
 
-bash
+```
 git clone https://github.com/MOHDSAMIULLAH/Clothing-Store-Task.git
-
+```
 
 2. Open the project directory:
 
-bash
+```
 cd fashion-ecommerce-store
-
+```
 
 3. Open index.html in your web browser to view the store.
 
