@@ -31,7 +31,7 @@ document.getElementById('searchInput').addEventListener('input', async function(
 document.getElementById('searchInput').addEventListener('blur', function() {
     setTimeout(() => {
         document.getElementById('suggestionsList').classList.add('hidden');
-    }, 200); // Delay to allow the click event to register
+    }, 400); // Delay to allow the click event to register
 });
 
 function showSuggestions(items) {
